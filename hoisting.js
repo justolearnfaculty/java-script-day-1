@@ -1,12 +1,16 @@
 
-hello()
+
 function hello(){
-  a=0
+//outer 
   console.log("hello")  
   var a;
+  a=0
+  //inner
   function inner(){
     var b=0
     console.log("a",a)
   }
   inner()
 }
+
+hello()
